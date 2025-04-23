@@ -38,35 +38,6 @@
   --card-border-rgb: 131, 134, 135;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(to bottom right,
-        rgba(1, 65, 255, 0),
-        rgba(1, 65, 255, 0),
-        rgba(1, 65, 255, 0.3));
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(#ffffff80,
-        #ffffff40,
-        #ffffff30,
-        #ffffff20,
-        #ffffff10,
-        #ffffff10,
-        #ffffff80);
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
-} */
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -81,24 +52,12 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
-
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-} */
 
 /* CSS Utils */
 .h1 {
@@ -120,9 +79,27 @@ a {
 }
 
 .text-gradient {
-  background: linear-gradient(91.58deg, #2250F2 -29.55%, #0EBCF3 75.22%);
+  background: linear-gradient(91.58deg, #6B46C1 -29.55%, #9F7AEA 75.22%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+}
+
+/* Custom styles */
+.bg-custom-gradient {
+  background: linear-gradient(135deg, #6B46C1 0%, #9F7AEA 100%);
+}
+
+.custom-shadow {
+  box-shadow: 0 4px 12px rgba(107, 70, 193, 0.15);
+}
+
+.custom-footer {
+  background-color: #F9FAFB;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #4B5563;
+  border-top: 1px solid #E5E7EB;
 }
